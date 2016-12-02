@@ -1,9 +1,9 @@
 module AuthHelper
 
   # App's client ID. Register the app in Application Registration Portal to get this value.
-  CLIENT_ID = 'f58b587-4a88-4ffe-9204-4db47d7c983a'
+  CLIENT_ID = ''
   # App's client secret. Register the app in Application Registration Portal to get this value.
-  CLIENT_SECRET = 'oiuCSHOo2YhZhDBHoXKSyN5'
+  CLIENT_SECRET = ''
 
   # Scopes required by the app
   SCOPES = [ 'openid',
