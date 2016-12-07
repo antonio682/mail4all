@@ -1,9 +1,11 @@
 module AuthHelper
 
   # App's client ID. Register the app in Application Registration Portal to get this value.
-  CLIENT_ID = '149e51ea-6044-4c68-9135-9d3e006f0bda'
+
+  CLIENT_ID = ''
+
   # App's client secret. Register the app in Application Registration Portal to get this value.
-  CLIENT_SECRET = 'oiuCSHOo2YhZhDBHoXKSyN5'
+  CLIENT_SECRET = ''
 
   # Scopes required by the app
   SCOPES = [ 'openid',
@@ -21,6 +23,7 @@ module AuthHelper
                               
     login_url = client.auth_code.authorize_url(:redirect_uri => REDIRECT_URI, :scope => SCOPES.join(' '))
   end
+
   
   # Exchanges an authorization code for a token
   def get_token_from_code(auth_code)
@@ -79,3 +82,6 @@ module AuthHelper
   end
 
 end
+=======
+end
+>>>>>>> c2b12303135952b8ae9607c354c5b682484a0eb2
