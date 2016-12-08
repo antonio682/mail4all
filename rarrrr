@@ -1,0 +1,273 @@
+=> [32m#<ActionDispatch::Request:0x000000056193d8[0m
+ @env[32m=[0m
+  {[31m[1;31m"[0m[31mGATEWAY_INTERFACE[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mCGI/1.1[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mPATH_INFO[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m/mail/index[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mQUERY_STRING[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mREMOTE_ADDR[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m10.240.0.185[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mREMOTE_HOST[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m10.240.0.185[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mREQUEST_METHOD[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mGET[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mREQUEST_URI[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttps://mail4all-antonio6822.c9users.io/mail/index[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mSCRIPT_NAME[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mSERVER_NAME[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mmail4all-antonio6822.c9users.io[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mSERVER_PORT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m443[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mSERVER_PROTOCOL[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mHTTP/1.1[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mSERVER_SOFTWARE[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mWEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_HOST[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mmail4all-antonio6822.c9users.io[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_ACCEPT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_UPGRADE_INSECURE_REQUESTS[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m1[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_USER_AGENT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_REFERER[1;31m"[0m[31m[0m=>
+    [31m[1;31m"[0m[31mhttps://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=149e51ea-6044-4c68-9135-9d3e006f0bda&redirect_uri=https%3A%2F%2Fmail4all-antonio6822.c9users.io%2Fapi%2Fv1%2Fauthorize&response_type=code&scope=openid+https%3A%2F%2Foutlook.office.com%2Fmail.read[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_ACCEPT_ENCODING[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mgzip, deflate, sdch[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_ACCEPT_LANGUAGE[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mes-ES,es;q=0.8,en;q=0.6[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_COOKIE[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m_workspace_session=46ac32a6c0261e707fc2e2ebdedebd80[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_X_FORWARDED_PROTO[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttps[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_X_FORWARDED_PORT[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m443[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_X_REGION[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31meu[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_X_FORWARDED_FOR[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m87.219.168.10[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mHTTP_CONNECTION[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mkeep-alive[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mrack.version[1;31m"[0m[31m[0m=>[[1;34m1[0m, [1;34m3[0m],
+   [31m[1;31m"[0m[31mrack.input[1;31m"[0m[31m[0m=>[32m#<StringIO:0x000000054fd3f0[0m[32m>[0m,
+   [31m[1;31m"[0m[31mrack.errors[1;31m"[0m[31m[0m=>[32m#<IO:<STDERR>>[0m,
+   [31m[1;31m"[0m[31mrack.multithread[1;31m"[0m[31m[0m=>[1;36mfalse[0m,
+   [31m[1;31m"[0m[31mrack.multiprocess[1;31m"[0m[31m[0m=>[1;36mfalse[0m,
+   [31m[1;31m"[0m[31mrack.run_once[1;31m"[0m[31m[0m=>[1;36mfalse[0m,
+   [31m[1;31m"[0m[31mrack.url_scheme[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttp[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mrack.hijack?[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+   [31m[1;31m"[0m[31mrack.hijack[1;31m"[0m[31m[0m=>[32m#<Proc:0x000000054fd260@/usr/local/rvm/gems/ruby-2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:76 (lambda)>[0m,
+   [31m[1;31m"[0m[31mrack.hijack_io[1;31m"[0m[31m[0m=>[1;36mnil[0m,
+   [31m[1;31m"[0m[31mHTTP_VERSION[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mHTTP/1.1[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mREQUEST_PATH[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m/mail/index[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mORIGINAL_FULLPATH[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m/mail/index[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mORIGINAL_SCRIPT_NAME[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31maction_dispatch.routes[1;31m"[0m[31m[0m=>
+    [32m#<ActionDispatch::Routing::RouteSet:0x000000055767a0[0m
+     @append[32m=[0m
+      [[32m#<Proc:0x00000004fae548@/usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/application/finisher.rb:24>[0m,
+       [32m#<Proc:0x000000023fb3d8@/usr/local/rvm/gems/ruby-2.3.0/gems/actionmailer-4.2.5/lib/action_mailer/railtie.rb:44>[0m],
+     @default_url_options[32m=[0m{},
+     @disable_clear_and_finalize[32m=[0m[1;36mfalse[0m,
+     @finalized[32m=[0m[1;36mtrue[0m,
+     @formatter[32m=[0m
+      [32m#<ActionDispatch::Journey::Formatter:0x000000055764a8[0m
+       @cache[32m=[0m[1;36mnil[0m,
+       @routes[32m=[0m
+        [32m#<ActionDispatch::Journey::Routes:0x00000005576548[0m
+         @ast[32m=[0m
+          [32m#<ActionDispatch::Journey::Nodes::Or:0x00000004f779f8[0m
+           @children[32m=[0m
+            [[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m
+              @left[32m=[0m
+               [32m#<ActionDispatch::Journey::Nodes::Slash:0x00000004c95438[0m
+                @left[32m=[0m[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                @memo[32m=[0m
+                 [32m#<ActionDispatch::Journey::Route:0x00000004cdac68[0m
+                  @app[32m=[0m
+                   [32m#<ActionDispatch::Routing::RouteSet::Dispatcher:0x00000004cdbdc0[0m
+                    @controller_class_names[32m=[0m[32m#<ThreadSafe::Cache:0x00000004cdbd98[0m @backend[32m=[0m{[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mMailController[1;31m"[0m[31m[0m}, @default_proc[32m=[0m[1;36mnil[0m[32m>[0m,
+                    @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m}[32m>[0m,
+                  @constraints[32m=[0m{[33m:required_defaults[0m=>[[33m:controller[0m, [33m:action[0m], [33m:request_method[0m=>[35m[1;35m/[0m[35m^GET$[1;35m/[0m[35m[0m},
+                  @decorated_ast[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m,
+                  @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m},
+                  @name[32m=[0m[31m[1;31m"[0m[31mmail_index[1;31m"[0m[31m[0m,
+                  @parts[32m=[0m[[33m:format[0m],
+                  @path[32m=[0m
+                   [32m#<ActionDispatch::Journey::Path::Pattern:0x00000004cdbc58[0m
+                    @anchored[32m=[0m[1;36mtrue[0m,
+                    @names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                    @offsets[32m=[0m[[1;34m0[0m, [1;34m0[0m],
+                    @optional_names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                    @re[32m=[0m[35m[1;35m/[0m[35m[1;35m\A[0m[35m[1;35m\/[0m[35mmail[1;35m\/[0m[35mindex(?:[1;35m\.[0m[35m([^[1;35m\/[0m[35m.?]+))?[1;35m\Z[0m[35m[1;35m/[0m[35m[0m,
+                    @required_names[32m=[0m[],
+                    @requirements[32m=[0m{},
+                    @separators[32m=[0m[31m[1;31m"[0m[31m/.?[1;31m"[0m[31m[0m,
+                    @spec[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m[32m>[0m,
+                  @path_formatter[32m=[0m
+                   [32m#<ActionDispatch::Journey::Format:0x00000004cda6f0[0m
+                    @children[32m=[0m[[1;34m4[0m],
+                    @parameters[32m=[0m[],
+                    @parts[32m=[0m
+                     [[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                      [31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m,
+                      [31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                      [31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m,
+                      [32m#<ActionDispatch::Journey::Format:0x00000004cda8f8[0m
+                       @children[32m=[0m[],
+                       @parameters[32m=[0m[[1;34m1[0m],
+                       @parts[32m=[0m
+                        [[31m[1;31m"[0m[31m.[1;31m"[0m[31m[0m,
+                         [32m#<struct ActionDispatch::Journey::Format::Parameter[0m
+                          name[32m=[0m[33m:format[0m,
+                          escaper[32m=[0m
+                           [32m#<Proc:0x00000005690d98@/usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/journey/visitors.rb:7 (lambda)>[0m[32m>[0m][32m>[0m][32m>[0m,
+                  @precedence[32m=[0m[1;34m1[0m,
+                  @required_defaults[32m=[0m[1;36mnil[0m,
+                  @required_parts[32m=[0m[][32m>[0m[32m>[0m,
+              @memo[32m=[0m[1;36mnil[0m,
+              @right[32m=[0m
+               [32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c948a8[0m
+                @left[32m=[0m
+                 [32m#<ActionDispatch::Journey::Nodes::Literal:0x00000004c95230[0m
+                  @left[32m=[0m[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m,
+                  @memo[32m=[0m
+                   [32m#<ActionDispatch::Journey::Route:0x00000004cdac68[0m
+                    @app[32m=[0m
+                     [32m#<ActionDispatch::Routing::RouteSet::Dispatcher:0x00000004cdbdc0[0m
+                      @controller_class_names[32m=[0m[32m#<ThreadSafe::Cache:0x00000004cdbd98[0m @backend[32m=[0m{[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mMailController[1;31m"[0m[31m[0m}, @default_proc[32m=[0m[1;36mnil[0m[32m>[0m,
+                      @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m}[32m>[0m,
+                    @constraints[32m=[0m{[33m:required_defaults[0m=>[[33m:controller[0m, [33m:action[0m], [33m:request_method[0m=>[35m[1;35m/[0m[35m^GET$[1;35m/[0m[35m[0m},
+                    @decorated_ast[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m,
+                    @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m},
+                    @name[32m=[0m[31m[1;31m"[0m[31mmail_index[1;31m"[0m[31m[0m,
+                    @parts[32m=[0m[[33m:format[0m],
+                    @path[32m=[0m
+                     [32m#<ActionDispatch::Journey::Path::Pattern:0x00000004cdbc58[0m
+                      @anchored[32m=[0m[1;36mtrue[0m,
+                      @names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                      @offsets[32m=[0m[[1;34m0[0m, [1;34m0[0m],
+                      @optional_names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                      @re[32m=[0m[35m[1;35m/[0m[35m[1;35m\A[0m[35m[1;35m\/[0m[35mmail[1;35m\/[0m[35mindex(?:[1;35m\.[0m[35m([^[1;35m\/[0m[35m.?]+))?[1;35m\Z[0m[35m[1;35m/[0m[35m[0m,
+                      @required_names[32m=[0m[],
+                      @requirements[32m=[0m{},
+                      @separators[32m=[0m[31m[1;31m"[0m[31m/.?[1;31m"[0m[31m[0m,
+                      @spec[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m[32m>[0m,
+                    @path_formatter[32m=[0m
+                     [32m#<ActionDispatch::Journey::Format:0x00000004cda6f0[0m
+                      @children[32m=[0m[[1;34m4[0m],
+                      @parameters[32m=[0m[],
+                      @parts[32m=[0m
+                       [[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                        [31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m,
+                        [31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                        [31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m,
+                        [32m#<ActionDispatch::Journey::Format:0x00000004cda8f8[0m
+                         @children[32m=[0m[],
+                         @parameters[32m=[0m[[1;34m1[0m],
+                         @parts[32m=[0m
+                          [[31m[1;31m"[0m[31m.[1;31m"[0m[31m[0m,
+                           [32m#<struct ActionDispatch::Journey::Format::Parameter[0m
+                            name[32m=[0m[33m:format[0m,
+                            escaper[32m=[0m
+                             [32m#<Proc:0x00000005690d98@/usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/journey/visitors.rb:7 (lambda)>[0m[32m>[0m][32m>[0m][32m>[0m,
+                    @precedence[32m=[0m[1;34m1[0m,
+                    @required_defaults[32m=[0m[1;36mnil[0m,
+                    @required_parts[32m=[0m[][32m>[0m[32m>[0m,
+                @memo[32m=[0m[1;36mnil[0m,
+                @right[32m=[0m
+                 [32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c948f8[0m
+                  @left[32m=[0m
+                   [32m#<ActionDispatch::Journey::Nodes::Slash:0x00000004c95168[0m
+                    @left[32m=[0m[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                    @memo[32m=[0m
+                     [32m#<ActionDispatch::Journey::Route:0x00000004cdac68[0m
+                      @app[32m=[0m
+                       [32m#<ActionDispatch::Routing::RouteSet::Dispatcher:0x00000004cdbdc0[0m
+                        @controller_class_names[32m=[0m[32m#<ThreadSafe::Cache:0x00000004cdbd98[0m @backend[32m=[0m{[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mMailController[1;31m"[0m[31m[0m}, @default_proc[32m=[0m[1;36mnil[0m[32m>[0m,
+                        @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m}[32m>[0m,
+                      @constraints[32m=[0m{[33m:required_defaults[0m=>[[33m:controller[0m, [33m:action[0m], [33m:request_method[0m=>[35m[1;35m/[0m[35m^GET$[1;35m/[0m[35m[0m},
+                      @decorated_ast[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m,
+                      @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m},
+                      @name[32m=[0m[31m[1;31m"[0m[31mmail_index[1;31m"[0m[31m[0m,
+                      @parts[32m=[0m[[33m:format[0m],
+                      @path[32m=[0m
+                       [32m#<ActionDispatch::Journey::Path::Pattern:0x00000004cdbc58[0m
+                        @anchored[32m=[0m[1;36mtrue[0m,
+                        @names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                        @offsets[32m=[0m[[1;34m0[0m, [1;34m0[0m],
+                        @optional_names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                        @re[32m=[0m[35m[1;35m/[0m[35m[1;35m\A[0m[35m[1;35m\/[0m[35mmail[1;35m\/[0m[35mindex(?:[1;35m\.[0m[35m([^[1;35m\/[0m[35m.?]+))?[1;35m\Z[0m[35m[1;35m/[0m[35m[0m,
+                        @required_names[32m=[0m[],
+                        @requirements[32m=[0m{},
+                        @separators[32m=[0m[31m[1;31m"[0m[31m/.?[1;31m"[0m[31m[0m,
+                        @spec[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m[32m>[0m,
+                      @path_formatter[32m=[0m
+                       [32m#<ActionDispatch::Journey::Format:0x00000004cda6f0[0m
+                        @children[32m=[0m[[1;34m4[0m],
+                        @parameters[32m=[0m[],
+                        @parts[32m=[0m
+                         [[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                          [31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m,
+                          [31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                          [31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m,
+                          [32m#<ActionDispatch::Journey::Format:0x00000004cda8f8[0m
+                           @children[32m=[0m[],
+                           @parameters[32m=[0m[[1;34m1[0m],
+                           @parts[32m=[0m
+                            [[31m[1;31m"[0m[31m.[1;31m"[0m[31m[0m,
+                             [32m#<struct ActionDispatch::Journey::Format::Parameter[0m
+                              name[32m=[0m[33m:format[0m,
+                              escaper[32m=[0m
+                               [32m#<Proc:0x00000005690d98@/usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/journey/visitors.rb:7 (lambda)>[0m[32m>[0m][32m>[0m][32m>[0m,
+                      @precedence[32m=[0m[1;34m1[0m,
+                      @required_defaults[32m=[0m[1;36mnil[0m,
+                      @required_parts[32m=[0m[][32m>[0m[32m>[0m,
+                  @memo[32m=[0m[1;36mnil[0m,
+                  @right[32m=[0m
+                   [32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94a38[0m
+                    @left[32m=[0m
+                     [32m#<ActionDispatch::Journey::Nodes::Literal:0x00000004c94f88[0m
+                      @left[32m=[0m[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m,
+                      @memo[32m=[0m
+                       [32m#<ActionDispatch::Journey::Route:0x00000004cdac68[0m
+                        @app[32m=[0m
+                         [32m#<ActionDispatch::Routing::RouteSet::Dispatcher:0x00000004cdbdc0[0m
+                          @controller_class_names[32m=[0m[32m#<ThreadSafe::Cache:0x00000004cdbd98[0m @backend[32m=[0m{[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mMailController[1;31m"[0m[31m[0m}, @default_proc[32m=[0m[1;36mnil[0m[32m>[0m,
+                          @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m}[32m>[0m,
+                        @constraints[32m=[0m{[33m:required_defaults[0m=>[[33m:controller[0m, [33m:action[0m], [33m:request_method[0m=>[35m[1;35m/[0m[35m^GET$[1;35m/[0m[35m[0m},
+                        @decorated_ast[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m,
+                        @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m},
+                        @name[32m=[0m[31m[1;31m"[0m[31mmail_index[1;31m"[0m[31m[0m,
+                        @parts[32m=[0m[[33m:format[0m],
+                        @path[32m=[0m
+                         [32m#<ActionDispatch::Journey::Path::Pattern:0x00000004cdbc58[0m
+                          @anchored[32m=[0m[1;36mtrue[0m,
+                          @names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                          @offsets[32m=[0m[[1;34m0[0m, [1;34m0[0m],
+                          @optional_names[32m=[0m[[31m[1;31m"[0m[31mformat[1;31m"[0m[31m[0m],
+                          @re[32m=[0m[35m[1;35m/[0m[35m[1;35m\A[0m[35m[1;35m\/[0m[35mmail[1;35m\/[0m[35mindex(?:[1;35m\.[0m[35m([^[1;35m\/[0m[35m.?]+))?[1;35m\Z[0m[35m[1;35m/[0m[35m[0m,
+                          @required_names[32m=[0m[],
+                          @requirements[32m=[0m{},
+                          @separators[32m=[0m[31m[1;31m"[0m[31m/.?[1;31m"[0m[31m[0m,
+                          @spec[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m[32m>[0m,
+                        @path_formatter[32m=[0m
+                         [32m#<ActionDispatch::Journey::Format:0x00000004cda6f0[0m
+                          @children[32m=[0m[[1;34m4[0m],
+                          @parameters[32m=[0m[],
+                          @parts[32m=[0m
+                           [[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                            [31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m,
+                            [31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+                            [31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m,
+                            [32m#<ActionDispatch::Journey::Format:0x00000004cda8f8[0m
+                             @children[32m=[0m[],
+                             @parameters[32m=[0m[[1;34m1[0m],
+                             @parts[32m=[0m
+                              [[31m[1;31m"[0m[31m.[1;31m"[0m[31m[0m,
+                               [32m#<struct ActionDispatch::Journey::Format::Parameter[0m
+                                name[32m=[0m[33m:format[0m,
+                                escaper[32m=[0m
+                                 [32m#<Proc:0x00000005690d98@/usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/journey/visitors.rb:7 (lambda)>[0m[32m>[0m][32m>[0m][32m>[0m,
+                        @precedence[32m=[0m[1;34m1[0m,
+                        @required_defaults[32m=[0m[1;36mnil[0m,
+                        @required_parts[32m=[0m[][32m>[0m[32m>[0m,
+                    @memo[32m=[0m[1;36mnil[0m,
+                    @right[32m=[0m
+                     [32m#<ActionDispatch::Journey::Nodes::Group:0x00000004c94ad8[0m
+                      @left[32m=[0m
+                       [32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94b78[0m
+                        @left[32m=[0m
+                         [32m#<ActionDispatch::Journey::Nodes::Dot:0x00000004c94dd0[0m
+                          @left[32m=[0m[31m[1;31m"[0m[31m.[1;31m"[0m[31m[0m,
+                          @memo[32m=[0m
+                           [32m#<ActionDispatch::Journey::Route:0x00000004cdac68[0m
+                            @app[32m=[0m
+                             [32m#<ActionDispatch::Routing::RouteSet::Dispatcher:0x00000004cdbdc0[0m
+                              @controller_class_names[32m=[0m[32m#<ThreadSafe::Cache:0x00000004cdbd98[0m @backend[32m=[0m{[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mMailController[1;31m"[0m[31m[0m}, @default_proc[32m=[0m[1;36mnil[0m[32m>[0m,
+                              @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m}[32m>[0m,
+                            @constraints[32m=[0m{[33m:required_defaults[0m=>[[33m:controller[0m, [33m:action[0m], [33m:request_method[0m=>[35m[1;35m/[0m[35m^GET$[1;35m/[0m[35m[0m},
+                            @decorated_ast[32m=[0m[32m#<ActionDispatch::Journey::Nodes::Cat:0x00000004c94858[0m ...[32m>[0m,
+                            @defaults[32m=[0m{[33m:controller[0m=>[31m[1;31m"[0m[31mmail[1;31m"[0m[31m[0m, [33m:action[0m=>[31m[1;31m"[0m[31mindex[1;31m"[0m[31m[0m},
+                            @name[32m=[0m[31m[1;31m"[0m[31mmail_index[1;31m"[0m[31m[0m,
+                            @parts[32m=[0m[[33m:format[0m],
+                            @path[32m=[0m
+                             [32m#<ActionDispatch::Journey::Path::P

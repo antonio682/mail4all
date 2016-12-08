@@ -1,17 +1,17 @@
 module AuthHelper
 
   # App's client ID. Register the app in Application Registration Portal to get this value.
-
-  CLIENT_ID = ''
-
+  CLIENT_ID = '149e51ea-6044-4c68-9135-9d3e006f0bda'
   # App's client secret. Register the app in Application Registration Portal to get this value.
-  CLIENT_SECRET = ''
+  CLIENT_SECRET = 'xm7bhjzmFNZ8HEOT9VNF5yv'
 
   # Scopes required by the app
   SCOPES = [ 'openid',
-             'https://outlook.office.com/mail.read' ]
+           'offline_access',
+           'https://outlook.office.com/mail.read',
+           'https://outlook.office.com/contacts.read']
   
-  REDIRECT_URI = 'https://mail4all-antonio6822.c9users.io/authorize' # Temporary!
+  REDIRECT_URI = 'https://mail4all-antonio6822.c9users.io/api/v1/authorize' # Temporary!
 
   # Generates the login URL for the app.
   def get_login_url
@@ -23,7 +23,6 @@ module AuthHelper
                               
     login_url = client.auth_code.authorize_url(:redirect_uri => REDIRECT_URI, :scope => SCOPES.join(' '))
   end
-
   
   # Exchanges an authorization code for a token
   def get_token_from_code(auth_code)
@@ -40,6 +39,7 @@ module AuthHelper
   
   # Gets the user's email from the /Me endpoint
   def get_user_email(access_token)
+    binding.pry
     conn = Faraday.new(:url => 'https://outlook.office.com') do |faraday|
       # Outputs to the console
       faraday.response :logger
@@ -53,8 +53,10 @@ module AuthHelper
       request.headers['Authorization'] = "Bearer #{access_token}"
       request.headers['Accept'] = 'application/json'
     end
+    binding.pry
   
     email = JSON.parse(response.body)['EmailAddress']
+    
   end
   
   # Gets the current access token
@@ -82,6 +84,3 @@ module AuthHelper
   end
 
 end
-=======
-end
->>>>>>> c2b12303135952b8ae9607c354c5b682484a0eb2
