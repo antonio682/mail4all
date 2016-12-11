@@ -39,7 +39,7 @@ module AuthHelper
   
   # Gets the user's email from the /Me endpoint
   def get_user_email(access_token)
-    binding.pry
+    
     conn = Faraday.new(:url => 'https://outlook.office.com') do |faraday|
       # Outputs to the console
       faraday.response :logger
@@ -53,7 +53,7 @@ module AuthHelper
       request.headers['Authorization'] = "Bearer #{access_token}"
       request.headers['Accept'] = 'application/json'
     end
-    binding.pry
+    
   
     email = JSON.parse(response.body)['EmailAddress']
     
@@ -69,7 +69,7 @@ module AuthHelper
                                 :site => 'https://login.microsoftonline.com',
                                 :authorize_url => '/common/oauth2/v2.0/authorize',
                                 :token_url => '/common/oauth2/v2.0/token')
- # binding.pry
+ 
     token = OAuth2::AccessToken.from_hash(client, token_hash)
   
     # Check if token is expired, refresh if so

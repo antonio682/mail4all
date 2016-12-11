@@ -10,8 +10,7 @@ class Api::V1::AuthController < ApplicationController
     token = get_token_from_code params[:code]
     session[:azure_token] = token.to_hash
     session[:user_email] = get_user_email token.token
-    binding.pry
-    redirect_to mail_index_url
+    redirect_to api_v1_mail_inbox_url
   end
   
 end
