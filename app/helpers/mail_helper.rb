@@ -28,9 +28,9 @@ module MailHelper
       response = conn.post do |request|
         request.url url
         request.headers['Authorization'] = "Bearer #{token}"
-        request.headers['Accept'] = "application/json"
+        request.headers['Content-Type'] = 'application/json'
         request.headers['X-AnchorMailbox'] = email
-        request.body = '{
+        request.body = {
                           "Message": {
                             "Subject": "#{subject}",
                             "Body": {
@@ -43,17 +43,10 @@ module MailHelper
                                   "Address": "#{email_sender}"
                                 }
                               }
-                            ],
-                            "Attachments": [
-                              {
-                                "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
-                                "Name": "menu.txt",
-                                "ContentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
-                              }
                             ]
                           },
                           "SaveToSentItems": "true"
-                        }'
+                        }.to_json
       end
       #binding.pry
       return response

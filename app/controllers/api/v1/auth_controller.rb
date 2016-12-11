@@ -12,5 +12,4 @@ class Api::V1::AuthController < ApplicationController
     session[:user_email] = get_user_email token.token
     redirect_to api_v1_mail_inbox_url
   end
-  
 end

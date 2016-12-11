@@ -1,9 +1,11 @@
 <%= form_tag("https://mail4all-antonio6822.c9users.io/api/v1/mail/send", method: "post") do %>
-  <%= label_tag(:q, "subject") %>
-  <%= text_field_tag(:q) %>
-   <%= label_tag(:r, "text") %>
-  <%= text_field_tag(:r) %>
-   <%= label_tag(:s, "email") %>
-  <%= text_field_tag(:s) %>
+  <%= label_tag(:subject, "subject") %>
+  <%= text_field_tag(:subject) %>
+   <%= label_tag(:content, "content") %>
+  <%= text_field_tag(:content) %>
+   <%= label_tag(:email, "email") %>
+  <%= text_field_tag(:email_reciever) %>
+  <%= label_tag(:campo_chungo, "campo chungo") %>
+  <%= text_field_tag(:campo_chungo) %>
   <%= submit_tag("Search") %>
 <% end %>

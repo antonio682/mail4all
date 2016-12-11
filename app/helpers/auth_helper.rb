@@ -9,6 +9,7 @@ module AuthHelper
   SCOPES = [ 'openid',
            'offline_access',
            'https://outlook.office.com/mail.read',
+           "https://outlook.office.com/mail.send",
            'https://outlook.office.com/contacts.read']
   
   REDIRECT_URI = 'https://mail4all-antonio6822.c9users.io/api/v1/authorize' # Temporary!
@@ -61,8 +62,14 @@ module AuthHelper
   
   # Gets the current access token
   def get_access_token
+    
     # Get the current token hash from session
-    token_hash = session[:azure_token]
+    if session[:azure_token] == nil
+      return false
+    else
+       token_hash = session[:azure_token]
+    end
+
   
     client = OAuth2::Client.new(CLIENT_ID,
                                 CLIENT_SECRET,
@@ -82,5 +89,4 @@ module AuthHelper
       access_token = token.token
     end
   end
-
 end

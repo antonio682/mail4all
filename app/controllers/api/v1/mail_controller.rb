@@ -11,7 +11,7 @@ class Api::V1::MailController < ApplicationController
       messages = JSON.parse(response.body)['value']
       render :json => messages
     else
-      redirect_to api_v1_auth_index 
+      redirect_to api_v1_authorize_login_url 
     end
   end
   
@@ -39,15 +39,16 @@ class Api::V1::MailController < ApplicationController
     end
   end
   
-  def create_and_send_new_message(subject: "subject", content: "content", email_sender: "eric6822@gmail.com")
+  def create_and_send_new_message()
+    params_list = params.permit(:subject, :content, :email_reciever)
     token = get_access_token
     email = session[:user_email]
     
     if token                    
-      request = api_mail_call_post(token, 'https://outlook.office.com/api/v2.0/me/sendmail', email,subject, content, email_sender)
-        binding.pry
-      response = JSON.parse(response.body)['value']
-      render :json => response
+      response = api_mail_call_post(token, 'https://outlook.office.com/api/v2.0/me/sendmail', email,params_list[:subject], params_list[:content], params_list[:email_reciever])
+      result = response.status
+      
+      render :json => result == 202  ? '202 OK' : ':( There was an error, please check your request and try again.' #=> "a"
     end
   end
   

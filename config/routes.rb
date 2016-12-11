@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: "json" } do
     namespace :v1 do
       #auth routes
+      get "authorize/login" => 'auth#index'
       get 'authorize' => 'auth#gettoken'
       # mail  routes
       get 'mail/inbox' => 'mail#inbox'
