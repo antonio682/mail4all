@@ -36,6 +36,7 @@ gem 'oauth2'
 gem 'activerecord-session_store'
 gem 'pry'
 gem 'faraday'
+gem "latchsdk"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

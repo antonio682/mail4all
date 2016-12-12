@@ -15,28 +15,30 @@ class Api::V1::MailController < ApplicationController
     end
   end
   
-  def get_contacts
-    token = get_access_token
-    email = session[:user_email]
-    if token
-      response =  api_mail_call( token, 'https://outlook.office.com', '/api/v2.0/Me/Contacts?$orderby=GivenName asc&$select=GivenName,Surname,EmailAddresses&$top=10', email )
-      contacts = JSON.parse(response.body)['value']
-      render :json => contacts
-    else
-      redirect_to root_url
-    end
+  def get_message()
+      token = get_access_token
+      email= session[:user_email]
+      message_id=params.permit(:id)
+      
+      if token
+        response = api_mail_call(token, 'https://outlook.office.com', '/api/v2.0/me/messages/' + message_id[:id] , email)
+        message = JSON.parse(response.body)
+        render :json => message
+      else
+        redirect_to api_v1_authorize_login_url
+      end
   end
-  
+ 
   def get_sent_items   
-    token = get_access_token
-    email = session[:user_email]
-    if token
-      response =  api_mail_call( token, 'https://outlook.office.com', '/api/v2.0/me/MailFolders/sentitems/messages/?$select=Sender,Subject', email )
-      sent_items = JSON.parse(response.body)['value']      
-      render :json => sent_items
-    else
-      redirect_to root_url
-    end
+      token = get_access_token
+      email = session[:user_email]
+      if token
+        response =  api_mail_call( token, 'https://outlook.office.com', '/api/v2.0/me/MailFolders/sentitems/messages/?$select=Sender,Subject', email )
+        sent_items = JSON.parse(response.body)['value']      
+        render :json => sent_items
+      else
+        redirect_to root_url
+      end
   end
   
   def create_and_send_new_message()
@@ -48,7 +50,7 @@ class Api::V1::MailController < ApplicationController
       response = api_mail_call_post(token, 'https://outlook.office.com/api/v2.0/me/sendmail', email,params_list[:subject], params_list[:content], params_list[:email_reciever])
       result = response.status
       
-      render :json => result == 202  ? '202 OK' : ':( There was an error, please check your request and try again.' #=> "a"
+      render :json => result == 202  ? '202 OK' : ':( There was an error, please check your request and try again.'
     end
   end
   

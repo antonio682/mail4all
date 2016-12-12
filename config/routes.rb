@@ -8,7 +8,9 @@ Rails.application.routes.draw do
       get 'authorize' => 'auth#gettoken'
       # mail  routes
       get 'mail/inbox' => 'mail#inbox'
-      get 'mail/get_contacts' => 'mail#get_contacts'
+      get 'mail/message' => 'mail#get_message'
+      get 'mail/contacts' => 'mail#contacts'
+      get 'mail/draft' => 'mail#draft'
       get 'mail/sent_items' => 'mail#get_sent_items' 
       post 'mail/send' => 'mail#create_and_send_new_message'
       get 'mail/crear' => 'mail#nuevo_mensaje'

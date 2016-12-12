@@ -6,14 +6,16 @@ module MailHelper
         # Uses the default Net::HTTP adapter
         faraday.adapter  Faraday.default_adapter  
       end
-
+      
+      encoded_url = URI.encode(request_url)
+    
       response = conn.get do |request|
-        request.url request_url
+        request.url URI.parse(encoded_url)
         request.headers['Authorization'] = "Bearer #{token}"
         request.headers['Accept'] = "application/json"
         request.headers['X-AnchorMailbox'] = email
       end
-      #binding.pry
+
       return response
     end
     #TODO crear mñana un modelo mensaje para las peticiones de mensajes de determinados usuarios y demas
@@ -48,7 +50,7 @@ module MailHelper
                           "SaveToSentItems": "true"
                         }.to_json
       end
-      #binding.pry
+   
       return response
     end
 end
